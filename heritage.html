@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Sổ tay di sản — Hát Xẩm</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#f5efe6]">
+    <nav class="bg-white shadow-sm">
+        <div class="container mx-auto px-6 flex gap-4 items-center py-3">
+            <a href="index.html" class="px-3 py-2 rounded-md text-[#6e2f1a]">Trang chủ</a>
+            <a href="heritage.html" class="px-3 py-2 rounded-md bg-[#6e2f1a] text-white">Sổ tay di sản</a>
+            <a href="ai.html" class="px-3 py-2 rounded-md text-[#6e2f1a]">Hát Xẩm & AI</a>
+        </div>
+    </nav>
+
+
+    <main class="container mx-auto px-6 mt-8">
+        <h2 class="text-2xl font-semibold text-[#6e2f1a]">Sổ Tay Di Sản Hát Xẩm</h2>
+        <p class="mt-2 text-gray-600">Kho tàng tri thức về nhạc cụ và nghệ nhân hát Xẩm được lưu trữ trên blockchain — Click vào từng mục để xem chi tiết.</p>
+
+        <div class="my-6 grid lg:grid-cols-5 gap-6 items-start">
+            <!-- Categories sidebar -->
+            <div class="lg:col-span-2">
+                <div id="categories-container">
+                    <!-- JS sẽ chèn categories ở đây -->
+                </div>
+            </div>
+            
+            <!-- Detail panel -->
+            <div class="lg:col-span-3 bg-white p-6 rounded-xl shadow-lg sticky top-6" id="detail">
+                <div class="text-center text-gray-500 py-8">
+                    <div class="mb-4">
+                        <div class="w-16 h-16 bg-[#f5efe6] rounded-full flex items-center justify-center mx-auto mb-3">
+                            <span class="text-2xl">🎵</span>
+                        </div>
+                        <h3 class="text-lg font-medium text-gray-700">Chọn một mục để xem chi tiết</h3>
+                        <p class="text-sm text-gray-500 mt-2">Khám phá thông tin về nhạc cụ, nghệ nhân, cùng với hình ảnh và mã hash blockchain</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="./assets/js/heritage.js"></script>
+</body>
+
+</html>
